@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<OraConnection HostName="SI-SCAN" Port="1521" SID="SIDB" User="TNVDB" Password="ScadTech1+" />
+	<CmdText>select job_name, state, last_start_date, last_run_duration, next_run_date from dba_scheduler_jobs where owner = 'TNVDB'</CmdText>
+	<MaxRunningTime>600</MaxRunningTime>
+	<RunPeriod>30</RunPeriod>
+</ApplicationConfiguration>
